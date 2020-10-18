@@ -1,0 +1,14 @@
+C:\Users\AlphaPaiN\dev\Teste\AltoBem\AltoBem.Domain.Services\bin\Debug\netcoreapp3.1\AltoBem.Domain.Services.deps.json
+C:\Users\AlphaPaiN\dev\Teste\AltoBem\AltoBem.Domain.Services\bin\Debug\netcoreapp3.1\AltoBem.Domain.Services.dll
+C:\Users\AlphaPaiN\dev\Teste\AltoBem\AltoBem.Domain.Services\bin\Debug\netcoreapp3.1\AltoBem.Domain.Services.pdb
+C:\Users\AlphaPaiN\dev\Teste\AltoBem\AltoBem.Domain.Services\bin\Debug\netcoreapp3.1\AltoBem.Domain.Core.dll
+C:\Users\AlphaPaiN\dev\Teste\AltoBem\AltoBem.Domain.Services\bin\Debug\netcoreapp3.1\AltoBem.Domain.dll
+C:\Users\AlphaPaiN\dev\Teste\AltoBem\AltoBem.Domain.Services\bin\Debug\netcoreapp3.1\AltoBem.Domain.Core.pdb
+C:\Users\AlphaPaiN\dev\Teste\AltoBem\AltoBem.Domain.Services\bin\Debug\netcoreapp3.1\AltoBem.Domain.pdb
+C:\Users\AlphaPaiN\dev\Teste\AltoBem\AltoBem.Domain.Services\obj\Debug\netcoreapp3.1\AltoBem.Domain.Services.csprojAssemblyReference.cache
+C:\Users\AlphaPaiN\dev\Teste\AltoBem\AltoBem.Domain.Services\obj\Debug\netcoreapp3.1\AltoBem.Domain.Services.AssemblyInfoInputs.cache
+C:\Users\AlphaPaiN\dev\Teste\AltoBem\AltoBem.Domain.Services\obj\Debug\netcoreapp3.1\AltoBem.Domain.Services.AssemblyInfo.cs
+C:\Users\AlphaPaiN\dev\Teste\AltoBem\AltoBem.Domain.Services\obj\Debug\netcoreapp3.1\AltoBem.Domain.Services.csproj.CoreCompileInputs.cache
+C:\Users\AlphaPaiN\dev\Teste\AltoBem\AltoBem.Domain.Services\obj\Debug\netcoreapp3.1\AltoBem.Domain.Services.csproj.CopyComplete
+C:\Users\AlphaPaiN\dev\Teste\AltoBem\AltoBem.Domain.Services\obj\Debug\netcoreapp3.1\AltoBem.Domain.Services.dll
+C:\Users\AlphaPaiN\dev\Teste\AltoBem\AltoBem.Domain.Services\obj\Debug\netcoreapp3.1\AltoBem.Domain.Services.pdb
