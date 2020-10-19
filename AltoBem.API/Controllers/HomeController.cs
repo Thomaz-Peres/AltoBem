@@ -23,11 +23,10 @@ namespace AltoBem.API.Controllers
         public ActionResult Get([FromServices] IApplicationServiceCliente serviceCliente)
         {
             _logger.LogInformation("Cadastrando usuario");
-            var home = new ClienteDto { Id = 1, Nome = "Thomaz", Sobrenome = "Peres", Role = "manager"};
+            var home = new ClienteDto { Id = 1, Nome = "Thomaz", Sobrenome = "Peres", Role = "Manager"};
             serviceCliente.Add(home);
 
             return Ok(new { message = "Dados configurados" });
         }
-        
     }
 }

@@ -12,8 +12,10 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using AltoBem.Application;
+using AltoBem.Infrastructure;
 using System;
 using System.Text;
+using Microsoft.AspNetCore.Identity;
 
 namespace AltoBem.API
 {
@@ -52,8 +54,9 @@ namespace AltoBem.API
                 };
             });
 
-            //services.AddDbContext<DataContext>(options => options.UseSqlServer(Configuration.GetConnectionString("connectionString")));
+            // services.AddDbContext<DataContext>(options => options.UseSqlServer(Configuration.GetConnectionString("connectionString")));
             services.AddDbContext<DataContext>(options => options.UseInMemoryDatabase(("Database")));
+            services.AddScoped<DataContext, DataContext>();
             services.AddControllers();
         }
 
@@ -72,7 +75,7 @@ namespace AltoBem.API
 
             var logger = loggerFactory.CreateLogger("logs");
             logger.LogInformation("########################################");
-            logger.LogInformation($"#### Executando aplicação, tempo de {DateTime.Now.ToLongTimeString()}");
+            logger.LogInformation($"#### Executando aplicaÃ§Ã£o, tempo de {DateTime.Now.ToLongTimeString()}");
             logger.LogInformation("########################################");
 
             app.UseHttpsRedirection();

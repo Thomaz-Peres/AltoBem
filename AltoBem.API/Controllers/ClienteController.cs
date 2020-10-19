@@ -30,6 +30,7 @@ namespace AltoBem.API.Controllers
         [AllowAnonymous]
         public ActionResult<string> GetById([FromServices] IApplicationServiceCliente serviceCliente, int id)
         {
+            _logger.LogInformation("Puxando dados do cliente");
             return Ok(serviceCliente.GetById(id));
         }
 
@@ -37,6 +38,7 @@ namespace AltoBem.API.Controllers
         [Route("")]
         public ActionResult Post([FromServices] IApplicationServiceCliente serviceCliente, [FromBody]ClienteDto clienteDto)
         {
+            _logger.LogInformation("Adicionando cliente");
             try
             {
                 if (clienteDto == null)
@@ -62,6 +64,7 @@ namespace AltoBem.API.Controllers
                 if (clienteDto == null)
                     return NotFound(new { message = "Não foi possivel alterar o cliente" });
 
+                _logger.LogInformation("Atualizando os dados do cliente");
                 serviceCliente.Update(clienteDto);
                 return Ok($"Cliente atualizado com sucesso \n {clienteDto}");
             }
@@ -81,21 +84,25 @@ namespace AltoBem.API.Controllers
                 if (id != clienteDto.Id)
                     return NotFound(new { message = "Não foi possivel remover o usuario" });
 
+                _logger.LogInformation("Excluindo cliente");
+
                 serviceCliente.Remove(clienteDto);
                 return Ok("Cliente removido com sucesso!");
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                throw ex;
+                throw;
             }
 
         }
 
         [HttpPost]
         [AllowAnonymous]
+        [Route("login")]
         public ActionResult<dynamic> Login([FromServices] IApplicationServiceCliente serviceCliente, [FromBody]ClienteDto clienteDto)
         {
             var usuario = ClienteRepositorie.criarUser(clienteDto.Nome, clienteDto.Sobrenome);
+            _logger.LogInformation("Fazendo login");
 
             if (usuario == null)
                 return NotFound(new { message = "Usuario ou senha invalidos" });

@@ -11,6 +11,6 @@ namespace AltoBem.Application.Dtos
         public string Titulo { get; set; }
         public string Descriçao { get; set; }
         public decimal Preco { get; set; }
-        public int CategoriaId { get; set; }
+        public Categoria Categoria { get; set; }
     }
 }

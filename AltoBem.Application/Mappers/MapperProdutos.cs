@@ -18,7 +18,7 @@ namespace AltoBem.Application.Mappers
                 Titulo = produtoDto.Titulo,
                 Descriçao = produtoDto.Descriçao,
                 Preco = produtoDto.Preco,
-                CategoriaId = produtoDto.CategoriaId
+                Categoria = produtoDto.Categoria
             };
             return produto;
         }
@@ -33,7 +33,7 @@ namespace AltoBem.Application.Mappers
                 Titulo = produtos.Titulo,
                 Descriçao = produtos.Descriçao,
                 Preco = produtos.Preco,
-                CategoriaId = produtos.CategoriaId
+                Categoria = produtos.Categoria
             };
             return produtoDto;
         }
@@ -46,7 +46,7 @@ namespace AltoBem.Application.Mappers
                 Titulo = x.Titulo,
                 Descriçao = x.Descriçao,
                 Preco = x.Preco,
-                CategoriaId = x.CategoriaId
+                Categoria = x.Categoria
             });
 
             return dto;

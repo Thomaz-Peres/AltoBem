@@ -16,3 +16,6 @@ C:\Users\AlphaPaiN\dev\Teste\AltoBem\AltoBem.Infrastructure\obj\Debug\netcoreapp
 C:\Users\AlphaPaiN\dev\Teste\AltoBem\AltoBem.Infrastructure\obj\Debug\netcoreapp3.1\AltoBem.Infrastructure.csproj.CoreCompileInputs.cache
 C:\Users\AlphaPaiN\dev\Teste\AltoBem\AltoBem.Infrastructure\bin\Debug\netcoreapp3.1\AltoBem.Domain.Services.dll
 C:\Users\AlphaPaiN\dev\Teste\AltoBem\AltoBem.Infrastructure\bin\Debug\netcoreapp3.1\AltoBem.Domain.Services.pdb
+C:\Users\AlphaPaiN\dev\Teste\AltoBem\AltoBem.Infrastructure\bin\Debug\netcoreapp3.1\AltoBem.Infrastructure.runtimeconfig.json
+C:\Users\AlphaPaiN\dev\Teste\AltoBem\AltoBem.Infrastructure\bin\Debug\netcoreapp3.1\AltoBem.Infrastructure.runtimeconfig.dev.json
+C:\Users\AlphaPaiN\dev\Teste\AltoBem\AltoBem.Infrastructure\obj\Debug\netcoreapp3.1\AltoBem.Infrastructure.genruntimeconfig.cache

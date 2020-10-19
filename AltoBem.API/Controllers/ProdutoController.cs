@@ -27,6 +27,7 @@ namespace AltoBem.API.Controllers
         [Route("{id:int}")]
         public ActionResult<string> GetById([FromServices] IApplicationServiceProduto serviceProduto, int id)
         {
+            _logger.LogInformation("Puxando dados do produto");
             return Ok(serviceProduto.GetById(id));
         }
 
@@ -38,6 +39,8 @@ namespace AltoBem.API.Controllers
             {
                 if(produtoDto == null)
                     return NotFound(new { message = "Não foi possivel criar o produto" });
+
+                _logger.LogInformation("Adicionando produto");
 
                 serviceProduto.Add(produtoDto);
                 return Ok($"Produto cadastrado com sucesso \n {produtoDto}");
@@ -58,6 +61,8 @@ namespace AltoBem.API.Controllers
                 if(produtoDto == null)
                     return NotFound(new { message = "Não foi possivel alterar o produto" });
 
+                _logger.LogInformation("Atualizando dados do produto");
+
                 serviceProduto.Update(produtoDto);
                 return Ok($"Produto atualizado com sucesso \n {produtoDto}");
             }
@@ -76,6 +81,8 @@ namespace AltoBem.API.Controllers
             {
                 if (produtoDto == null)
                     return NotFound(new { message = "Não foi possivel remover o produto" });
+
+                _logger.LogInformation("Deletando produto");
 
                 serviceProduto.Remove(produtoDto);
                 return Ok("O produto foi removido com sucesso");
